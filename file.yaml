@@ -5,7 +5,7 @@
   tasks:
   - name: Crear un fichero vacío
     file:
-      path: "/home/santiago/awx-prueba.txt"
+      path: "home/santiago/holaprueba.txt"
       state: "touch"
 
 ...
