@@ -5,7 +5,7 @@
   tasks:
   - name: Crear un fichero vacío
     file:
-      path: "home/santiago/holaprueba.txt"
+      path: "/tmp/holaprueba.txt"
       state: "touch"
 
 ...
