@@ -4,14 +4,14 @@
 
   tasks:
   - name: Copy en ubu y de
-    ansible.builtin.copy:
-      src: bienSan.txt
-      dest: /home/santiago/bienSan.txt
+    ansible.builtin.file:
+      path: "/tmp/Okl_funk"
+      state: directory
     when: ansible_distribution | lower == "ubuntu" or ansible_distribution | lower == "debian"
 
   - name: Copy en redhat
-    ansible.builtin.copy:
-      src: bienSan.txt
-      dest: /home/admin/bienSan.txt
+    ansible.builtin.file:
+      path: "/tmp/Para_q_funk"
+      state: directory
     when: ansible_distribution | lower == "redhat"
 ...
