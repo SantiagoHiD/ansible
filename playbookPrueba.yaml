@@ -5,13 +5,13 @@
   tasks:
   - name: Copy en ubu y de
     ansible.builtin.copy:
-      src: ./bienSan.txt
+      src: */bienSan.txt
       dest: /home/santiago/bienSan.txt
     when: ansible_distribution | lower == "ubuntu" or ansible_distribution | lower == "debian"
 
   - name: Copy en redhat
     ansible.builtin.copy:
-      src: ./bienSan.txt
+      src: */bienSan.txt
       dest: /home/admin/bienSan.txt
     when: ansible_distribution | lower == "redhat"
 ...
