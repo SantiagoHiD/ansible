@@ -1,7 +1,7 @@
 ---
 - name: Trabajar con ficheros
   hosts: all
-      
+
   tasks:
   - name: Copy en ubu y de
     ansible.builtin.copy:
@@ -14,5 +14,4 @@
       src: /home/santiago/bienSan.txt
       dest: /home/admin/bienSan.txt
     when: ansible_distribution | lower == "redhat"
-  
 ...
